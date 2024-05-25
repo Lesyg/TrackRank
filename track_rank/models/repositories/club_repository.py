@@ -3,8 +3,8 @@ Repository handling clubs
 """
 
 import requests
-from endpoints import CLUBS
-from models.club import Club
+from track_rank.endpoints import CLUBS
+from track_rank.models.club import Club
 
 
 # TODO improve so it return Club class

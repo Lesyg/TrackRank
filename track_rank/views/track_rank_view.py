@@ -4,9 +4,13 @@ Class that is responsible for displaying components
 
 import pandas as pd
 import streamlit as st
-from constants import (PROJECT_ABOUT_TEXT, PROJECT_NAME, PROJECT_README_URL,
-                       PROJECT_REPOSITORY_URL)
-from models.club import Club
+from constants import (
+    PROJECT_ABOUT_TEXT,
+    PROJECT_NAME,
+    PROJECT_README_URL,
+    PROJECT_REPOSITORY_URL,
+)
+from track_rank.models.club import Club
 
 
 class TrackRankView:

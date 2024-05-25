@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 from io import BytesIO
-from models.repositories.athlete_repository import get_athlete_results
+from track_rank.models.repositories.athlete_repository import get_athlete_results
 
 
 # @st.cache_data

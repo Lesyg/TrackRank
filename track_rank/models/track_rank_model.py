@@ -5,10 +5,10 @@ from datetime import date
 import pandas as pd
 import plotly.graph_objects as go
 import requests
-from endpoints import COMPETITION
-from models.athlete import Athlete
-from models.competition import Competition
-from models.repositories.athlete_repository import (
+from track_rank.endpoints import COMPETITION
+from track_rank.models.athlete import Athlete
+from track_rank.models.competition import Competition
+from track_rank.models.repositories.athlete_repository import (
     get_athletes_by_club_list,
     get_athletes_by_ean_list,
 )

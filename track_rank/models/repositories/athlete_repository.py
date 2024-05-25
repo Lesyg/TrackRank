@@ -6,9 +6,9 @@ from collections.abc import Iterable
 from datetime import datetime
 
 import requests
-from endpoints import ATHLETE_EAN, ATHLETE_RESULT, CLUB_MEMBERS
-from models.athlete import Athlete
-from models.result import Result
+from track_rank.endpoints import ATHLETE_EAN, ATHLETE_RESULT, CLUB_MEMBERS
+from track_rank.models.athlete import Athlete
+from track_rank.models.result import Result
 
 
 def get_athletes_by_club(club_id: int) -> list[Athlete]:

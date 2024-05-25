@@ -8,10 +8,10 @@ from controllers.data_controller import (
     merge_points_results_all,
     to_excel,
 )
-from models.competition import Competition
-from models.repositories.club_repository import get_clubs
-from models.track_rank_model import TrackRankModel
-from views.track_rank_view import TrackRankView
+from track_rank.models.competition import Competition
+from track_rank.models.repositories.club_repository import get_clubs
+from track_rank.models.track_rank_model import TrackRankModel
+from track_rank.views.track_rank_view import TrackRankView
 
 
 def display_competition(comp_list: list[Competition]) -> pd.DataFrame:

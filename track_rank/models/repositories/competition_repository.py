@@ -5,8 +5,8 @@ Repository handling competitions
 from datetime import datetime
 
 import requests
-from endpoints import COMPETITION
-from models.competition import Competition
+from track_rank.endpoints import COMPETITION
+from track_rank.models.competition import Competition
 
 
 def get_competition_by_id(
