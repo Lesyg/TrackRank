@@ -1,0 +1,24 @@
+image: python:latest
+
+stages:
+  # - test
+  - code-style
+
+before_script:
+  - pip install --upgrade pip >/dev/null
+  - python -m venv .venv
+  - source .venv/bin/activate
+  - pip install -r requirements.txt
+  - pytest --version
+  - pylint --version
+
+# pytest:
+#   stage: test
+#   script:
+#     - pytest -c pytest.ini -v --tb=no --no-summary -rN tests --capture=tee-sys 
+
+pylint:
+  stage: code-style
+  script:
+    - pylint track_rank --disable=C0301,C0103
+  allow_failure: true
