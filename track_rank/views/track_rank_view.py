@@ -4,7 +4,7 @@ Class that is responsible for displaying components
 
 import pandas as pd
 import streamlit as st
-from constants import (
+from track_rank.constants import (
     PROJECT_ABOUT_TEXT,
     PROJECT_NAME,
     PROJECT_README_URL,
