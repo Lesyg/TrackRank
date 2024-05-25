@@ -29,8 +29,8 @@ def get_athletes_by_club(club_id: int) -> list[Athlete]:
             at["Jmeno"],
             at["Prijmeni"],
             at["Ean"],
-            repre_from=datetime.strptime(at["RepreClenOd"], "%Y-%m-%dT%H:%M:%S"),
-            repre_to=datetime.strptime(at["RepreClenDo"], "%Y-%m-%dT%H:%M:%S"),
+            # repre_from=datetime.strptime(at["RepreClenOd"], "%Y-%m-%dT%H:%M:%S"),
+            # repre_to=datetime.strptime(at["RepreClenDo"], "%Y-%m-%dT%H:%M:%S"),
         )
         for at in data
     ]
