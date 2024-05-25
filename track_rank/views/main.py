@@ -2,7 +2,7 @@ import datetime
 
 import pandas as pd
 import streamlit as st
-from controllers.data_controller import (
+from track_rank.controllers.data_controller import (
     collect_results,
     merge_points_results,
     merge_points_results_all,
